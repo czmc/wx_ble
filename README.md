@@ -28,12 +28,12 @@
   }
 
 ## 5.连接
-  var Ble = require('./ble/ble.js').Ble
-  Ble.connectBle(deviceMac, deviceName, {
-      onSuccess: function () {
-        //do shomthing
-      },
-      onFailure(errorCode){
-        console.log(errorCode);
-      }
+    var Ble = require('./ble/ble.js').Ble
+    Ble.connectBle(deviceMac, deviceName, {
+        onSuccess: function () {
+          //do shomthing
+        },
+        onFailure(errorCode){
+          console.log(errorCode);
+        }
     });
