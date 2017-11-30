@@ -1,0 +1,16 @@
+.line {
+   background-color: gray;
+   height: 1px;
+   margin-top: 5px;
+   width: 90%;
+
+}
+.ls{
+  margin-top: 20rpx;
+}
+.item {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:10rpx; 
+    width: 100%;
+}

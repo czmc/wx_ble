@@ -1,0 +1,17 @@
+
+
+<view  wx:for="{{list}}" wx:for-item="item" 
+        class='ls'
+         data-title="{{item.deviceId}}" 
+         data-name="{{item.name}}" 
+         data-advertisData="{{item.advertisServiceUUIDs}}" 
+         wx:key="{{item.deviceId}}"
+         bindtap="bindViewTap">
+      <view  class="item">
+        {{item.name}}
+        <view  class="line"/>
+      </view>
+     <loading   hidden="{{!showLoadding}}">
+        等待连接..
+    </loading>
+</view>
