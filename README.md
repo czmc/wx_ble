@@ -10,26 +10,19 @@
 [https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetconnectedbluethoothdevicesobject](https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetconnectedbluethoothdevicesobject)
 ## 3.引用
   var Ble = require('./ble/ble.js').Ble
+  var ble = new Ble();
 ## 4.搜索
-    String.prototype.startWith = function (str) {
-        var reg = ;
-        return reg.test(this);
-    }
-    Ble.scanBle(1000, 10000,
+    ble.scanBle(1000, 10000,
     function (result) {
        //do shomthing
     },
     function (deviceName) {
-        if (deviceName.startWith('TW')) {
-          return true;
-        }
-        return false;
+        return true;
     });
   }
 
 ## 5.连接
-    var Ble = require('./ble/ble.js').Ble
-    Ble.connectBle(deviceMac, deviceName, {
+    ble.connectBle(deviceMac, deviceName, {
         onSuccess: function () {
           //do shomthing
         },
